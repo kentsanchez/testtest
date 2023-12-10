@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kent's Website</title>
+    <link rel="stylesheet" href="/styyyle.css" />
+</head>
+
+<body>
+<div class="overlay">
+  <img src="./overlay.png" alt="">
+</div>
+
+    <main>
+      <nav class="navbar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./inctax.html">Income Tax Calculator</a></li>
+            <li><a href="./Calc.html">Unit Converter</a></li>
+            <li><a href="./Payroll LIST.html">Payroll List</a></li>
+            <li><a href="./factorial.html">Factorial</a></li>
+        </ul>
+    </nav>
+      <section class="haynako">
+      <div class="glass">
+
+      
+      <div class="incometax">
+        <h1>Income Tax Calculator</h1>
+  
+        <label for="taxableIncome">Enter Taxable Income:</label>
+        <input type="number" id="taxableIncome">
+        <button onclick="calculateIncomeTax()" style="font-family: Montserrat;">Calculate Income Tax</button>
+    
+        <p id="result">Income Tax: </p>
+
+    </div>
+    <div class="taxinc">
+      <img src="./taxinc.png" alt="">
+    </div>
+  </section>
+    </main>
+
+  
+ 
+
+    <script>
+        function calculateIncomeTax() {
+            var taxableIncome = parseFloat(document.getElementById('taxableIncome').value);
+            var incomeTax = 0;
+
+            if (!isNaN(taxableIncome)) {
+                if (taxableIncome <= 250000) {
+                    incomeTax = 0;
+                } else if (taxableIncome > 250000 && taxableIncome <= 400000) {
+                    incomeTax = 14000 + 0.2 * (taxableIncome - 250000);
+                } else if (taxableIncome > 400000 && taxableIncome <= 800000) {
+                    incomeTax = 60000 + 0.25 * (taxableIncome - 400000);
+                } else if (taxableIncome > 800000 && taxableIncome <= 2000000) {
+                    incomeTax = 169000 + 0.3 * (taxableIncome - 800000);
+                } else if (taxableIncome > 2000000 && taxableIncome <= 8000000) {
+                    incomeTax = 618000 + 0.32 * (taxableIncome - 2000000);
+                } else {
+                    incomeTax = 3110000 + 0.35 * (taxableIncome - 8000000);
+                }
+
+                document.getElementById('result').innerText = 'Income Tax: ' + incomeTax.toFixed(2);
+            } else {
+                document.getElementById('result').innerText = 'Invalid input. Please enter a valid number.';
+            }
+        }
+    </script>
+    <script>
+      function convertCelsiusToFahrenheit() {
+        var celsius = parseFloat(document.getElementById('celsiusInput').value);
+        if (!isNaN(celsius)) {
+          var fahrenheit = (celsius * 9 / 5) + 32;
+          document.getElementById('resultCtoF').innerText = 'Result: ' + fahrenheit.toFixed(2) + '°F';
+        } else {
+          document.getElementById('resultCtoF').innerText = 'Invalid input. Please enter a valid number.';
+        }
+      }
+  
+      function convertFahrenheitToCelsius() {
+        var fahrenheit = parseFloat(document.getElementById('fahrenheitInput').value);
+        if (!isNaN(fahrenheit)) {
+          var celsius = (fahrenheit - 32) * 5 / 9;
+          document.getElementById('resultFtoC').innerText = 'Result: ' + celsius.toFixed(2) + '°C';
+        } else {
+          document.getElementById('resultFtoC').innerText = 'Invalid input. Please enter a valid number.';
+        }
+      }
+  
+      function convertMetersToFeet() {
+        var meters = parseFloat(document.getElementById('metersInput').value);
+        if (!isNaN(meters)) {
+          var feet = meters * 3.28084;
+          document.getElementById('resultMtoF').innerText = 'Result: ' + feet.toFixed(2) + 'ft';
+        } else {
+          document.getElementById('resultMtoF').innerText = 'Invalid input. Please enter a valid number.';
+        }
+      }
+  
+      function convertFeetToMeters() {
+        var feet = parseFloat(document.getElementById('feetInput').value);
+        if (!isNaN(feet)) {
+          var meters = feet / 3.28084;
+          document.getElementById('resultFtoM').innerText = 'Result: ' + meters.toFixed(2) + 'm';
+        } else {
+          document.getElementById('resultFtoM').innerText = 'Invalid input. Please enter a valid number.';
+        }
+      }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Kent's Website </title>
+        <link rel="stylesheet" href="./styyyle.css" />
+    </head>
+    <body>
+        <div class="overlay">
+            <img src="./overlay.png" alt="">
+          </div>
+         <main>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./inctax.html">Income Tax Calculator</a></li>
+                    <li><a href="./Calc.html">Unit Converter</a></li>
+                    <li><a href="./Payroll LIST.html">Payroll List</a></li>
+                    <li><a href="./factorial.html">Calculator</a></li>
+                </ul>
+            </nav>
+                      
+            <section class="factorial">
+                <div class="omzim">
+  <h1>Natural Numbers Calculator</h1>
+
+  <label for="nInput" style="font-family: Gotham;">Enter an integer:</label>
+  <input type="number" id="nInput">
+  <button onclick="calculate()">Calculate</button>
+
+  <p id="resultFactorial">Factorial: </p>
+  <p id="resultSum">Sum: </p>
+  <p id="resultAverage">Average: </p>
+
+  <script>
+    function calculate() {
+      var n = parseInt(document.getElementById('nInput').value);
+
+
+      var factorial = 1;
+      var i = 1;
+      while (i <= n) {
+        factorial *= i;
+        i++;
+      }
+      document.getElementById('resultFactorial').innerText = 'Factorial: ' + factorial;
+
+      var sum = 0;
+      var j = 1;
+      do {
+        sum += j;
+        j++;
+      } while (j <= n);
+      document.getElementById('resultSum').innerText = 'Sum: ' + sum;
+
+      var total = 0;
+      for (var k = 1; k <= n; k++) {
+        total += k;
+      }
+      var average = total / n;
+      document.getElementById('resultAverage').innerText = 'Average: ' + average.toFixed(2);
+    }
+  </script>
+  
+                </div>
+            </section>
+
+</body>
+</html>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

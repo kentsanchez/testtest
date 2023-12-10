@@ -1,0 +1,216 @@
+.navbar ul{
+    justify-content: center;
+    list-style-type: none;
+    background-color: rgb(69, 39, 0);
+    padding: 0px;
+    margin: 10px;
+    overflow: hidden;
+    position: fixed;
+    border-radius: 1rem;
+    z-index: 8;
+   
+}
+.container{
+    position: absolute;
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 4;
+    scale: 72%;
+    right: -76%;
+    top: 61.3%;
+}
+
+.container img{
+    width: 100px;
+            height: 100px;
+            object-fit: cover; 
+            margin: 5px;
+            
+}
+
+.box{
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: .7s ease-out;
+}
+
+.box img{
+
+    border-radius: 5px;
+}
+
+.box:hover{
+    transform: scale(1.6);
+    z-index: 2;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    
+}
+
+.grad{
+    position: absolute;
+    scale: 140%;
+    z-index: 3;
+    right: -50%;
+    top: 10%;
+}
+
+.navbar a:hover{
+    background-color: rgb(95, 64, 64);
+}
+.photos{
+    position: absolute;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 1;
+    scale: 23%;
+    right: -26%;
+    top: -230.3%;
+    
+}
+
+.puto img{
+margin: 50px;
+z-index: 1;
+opacity: 40%;
+}
+
+.texthead{
+    position: absolute;
+    right: -46%;
+    top: 3.3%;
+    z-index: 10;
+    color: aliceblue;
+    scale: 60%;
+    opacity: 80%;
+    line-height: 4px;
+    text-align: center  ;
+}
+
+
+
+.puto{
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: .7s ease-out;
+}
+
+.puto:hover{
+    transform: scale(1.6);
+    transform: opacity(100%);
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    
+    background: rgb(255,65,188);
+    background: linear-gradient(90deg, #835832 100%, rgb(231, 132, 1) 100%);
+    font-family: Montserrat;
+    position: absolute;
+    overflow: hidden;
+ 
+    
+}
+
+.logo{
+    position: absolute;
+    scale: 36%;
+    bottom: -100px;
+    left: 100px;
+    z-index: 5;
+}
+
+.text{
+    position: absolute;
+    overflow: hidden;
+    top: 53%;
+    font-size: x-large;
+    color: aliceblue;
+    z-index: 7;
+  
+}
+.frilans{
+    position: absolute;
+    right: -52%;
+    top: 68.9%;
+    color: aliceblue;
+    z-index: 10;
+    
+
+}
+.navbar li{
+    float: left;
+    
+}
+
+.glass{
+    position: absolute;
+    background: white;
+    min-height: 10vh;
+    width: 80%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.923),
+        rgba(255, 255, 255, 0.3)
+      );
+      border-radius: 1rem;
+      z-index: 3;
+      backdrop-filter: blur(1rem);
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;  
+    letter-spacing: -0.7px;
+    justify-content: center;
+    right: -69%;
+    top: 75%;
+}
+.maintext{
+    position: absolute;
+    left: 100%;
+    color: aliceblue;
+    scale: 400%;
+    top: 10%;
+
+}
+.glas1{
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    min-height: 29vh;
+    width: 75%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.923),
+        rgba(255, 255, 255, 0.3)
+      );
+      border-radius: 2rem;
+      z-index: 3;
+      backdrop-filter: blur(1rem);
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;  
+    letter-spacing: -0.7px;
+    justify-content: center;
+    right: -72%;
+    top: 38%;
+}
+
+.text{
+    scale: 50%;
+    left: 50%;
+}

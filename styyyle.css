@@ -1,0 +1,171 @@
+body{
+ background: rgb(255,65,188);
+    background: linear-gradient(90deg, #835832 100%, rgb(231, 132, 1) 100%);
+
+ 
+}
+.navbar ul{
+    justify-content: center;
+    list-style-type: none;
+    background-color: rgb(69, 39, 0);
+    padding: 0px;
+    margin: 10px;
+    overflow: hidden;
+    position: fixed;
+    border-radius: 1rem;
+    z-index: 8;
+    font-family: Montserrat;
+   
+}
+.overlay{
+    position: absolute;
+    scale: 220%;
+    left: 28%;
+    opacity: 20%;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    
+}
+
+.navbar a:hover{
+    background-color: rgb(95, 64, 64);
+}
+
+.navbar li{
+    float: left;
+    
+}
+.haynako{
+    justify-content: center;
+}
+.glass{
+    position: absolute;
+    background: white;
+    min-height: 50vh;
+    width: 30%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.923),
+        rgba(255, 255, 255, 0)
+      );
+      border-radius: 2rem;
+      z-index: 3;
+      backdrop-filter: blur(1rem);
+      display: flex;
+      margin: 20px;
+      padding: 30px;
+align-self: center;
+top: 18%;
+right: 31.4%;
+
+    font-family: Montserrat;
+    letter-spacing: -1px;
+}
+
+.calc{
+    position: absolute;
+    background: white;
+    min-height: 50vh;
+    width: 30%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.923),
+        rgba(255, 255, 255, 0)
+      );
+      border-radius: 2rem;
+      z-index: 3;
+      backdrop-filter: blur(1rem);
+      display: flex;
+      margin: 20px;
+      padding: 30px;
+align-self: center;
+top: 10%;
+right: 31.4%;
+
+    font-family: Montserrat;
+    letter-spacing: -1px;
+
+}
+
+.payroll{
+    position: absolute;
+    background: white;
+    min-height: 50vh;
+    width: 80%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.923),
+        rgba(255, 255, 255, 0)
+      );
+      border-radius: 2rem;
+      z-index: 3;
+      backdrop-filter: blur(1rem);
+      display: flex;
+      margin: 20px;
+      padding: 30px;
+      scale: 80%;
+align-self: center;
+top: 10%;
+right: 7.4%;
+
+    font-family: Montserrat;
+    letter-spacing: -1px;
+
+}
+
+.taxinc{
+    position: absolute;
+    scale: 45%;
+    justify-content: center;
+    top: 18%;
+    right: -56.4%;
+}
+.text{
+    word-spacing: 2px;
+}
+
+table {
+    width: 80%; 
+    margin: 0 auto;
+    border-collapse: collapse; 
+
+th, td {
+    border: 1px solid #dddddd; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+th {
+    background-color: #f2f2f2;
+}
+}
+.omzim{
+    position: absolute;
+    background: white;
+    min-height: 30vh;
+    width: 25%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.923),
+        rgba(255, 255, 255, 0)
+      );
+      border-radius: 2rem;
+      z-index: 3;
+      backdrop-filter: blur(1rem);
+
+      margin: 20px;
+      padding: 30px;
+
+      align-self: center;
+top: 24%;
+right: 34.4%;
+
+    font-family: Montserrat;
+    letter-spacing: -1px;
+
+}
